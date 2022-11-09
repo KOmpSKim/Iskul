@@ -1,0 +1,44 @@
+#include<stdio.h>
+
+	int sum_Even(int array[]);
+	int product_Odd(int array[]);
+	
+		
+int main (void)
+{
+	int num[10],i,Even_total,Odd_total
+	
+	for (i = 0 ; i < 10 ; i++){
+		printf("Enter 10 input values: ");
+		scanf("%d",&num[i]);	
+	}
+
+	Even_total = sum_Even (num);
+	Odd_total = product_Odd(num);
+	
+	printf("Sum of Even Numbers: %d\n",Even_total);
+	printf("Product of Odd Numbers: %d\n",Odd_total);
+
+}
+
+int sum_Even (int array[]){
+	int x , total_even = 0;
+	for (x=0 ; x<10 ; x++){
+		if [array[x]%2 == 0]{
+			total_even = total_even + array[x];
+		}	
+	}
+	return total_even;	
+}
+
+int product_Odd(int array[]){
+	int y, total_odd= 0;
+	for (y=0 ; y < 10 ; y++ ){
+		if[array[y]%2 != 0]{
+		total_odd = total_odd * array[y];
+		}
+	}
+	
+	return total_odd;
+	
+}
